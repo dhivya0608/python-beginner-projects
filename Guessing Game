@@ -1,0 +1,19 @@
+secret_number = 9
+guess_limit = 3
+guess_count = 0
+
+print("Welcome to the Guessing Game!")
+print("Guess the number between 1 and 10.")
+
+while guess_count < guess_limit:
+    guess = int(input("Enter your guess: "))
+    guess_count += 1
+
+    if guess == secret_number:
+        print("You won!")
+        break
+    else:
+        print("Wrong guess. Try again!")
+
+if guess != secret_number:
+    print(" You lost! The correct number was", secret_number)
